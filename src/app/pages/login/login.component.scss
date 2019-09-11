@@ -1,0 +1,27 @@
+.conteiner{
+    height: 100vh;
+    background-color: #3f51b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    box-sizing: border-box;
+    padding: 16px;
+
+}
+mat-card{width: 100%;max-width: 400px;}
+mat-card-actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 16px;
+}
+.inputs{
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    mat-form-field{
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+<form class="conteiner"[formGroup]="form">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                Login
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="inputs">
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput type="text"formControlName="email"placeholder="Digite seu e-mail"required>
+                    <mat-error>
+                        Obrigatorio!!!
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Matricula</mat-label>
+                    <input matInput type="text"formControlName="matricula"placeholder="Digite sua senha"required>
+                    <mat-error>
+                        Obrigatorio!!!
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)= "entrar()">
+                Entrar
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</form>
